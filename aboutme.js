@@ -13,6 +13,12 @@ titulo.textContent = 'Bienvenidos a mi web';
 const botonSobreMi = document.createElement('button');
 botonSobreMi.textContent = 'Sobre mí';
 
+const botonProyectos = document.createElement('button');
+botonProyectos.textContent = 'Mis proyectos';
+
+const botonHabilidades = document.createElement('button');
+botonHabilidades.textContent = 'Mis habilidades'
+
 const botonModoOscuro = document.createElement('button');
 botonModoOscuro.id = 'Modo-oscuro';
 botonModoOscuro.textContent = 'Alternar Modo Oscuro';
