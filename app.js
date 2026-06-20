@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', ( )  => {
-const sobreMi =  document.getElementById ('sobreMi');
+const sobreMi =  document.getElementById ('app');
 
 if (!sobreMi) {
         console.error("Error en encontrar al contenedor de la web");
@@ -41,6 +41,10 @@ header.appendChild(botonModoOscuro);
 
 sobreMi.prepend(header);
 
+seccionSobreMi.innerHTML = `
+    <h2> Bienvenidos a mi Web </h2>
+    
+    `;
 
 
 })
