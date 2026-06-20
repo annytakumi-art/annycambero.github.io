@@ -1,8 +1,27 @@
 document.addEventListener('DOMContentLoaded', ( )  => {
-const ACERCADEMI =  document.getElementById ('aboutme');
- if (!aboutme) {
+const sobreMi =  document.getElementById ('sobreMi');
+
+if (!sobreMi) {
         console.error("Error en encontrar al contenedor de la web");
         return;
     }
+
+const header = document.createElement('header');
+const titulo = document.createElement('h1');
+titulo.textContent = 'Bienvenidos a mi web';
+
+const botonSobreMi = document.createElement('button');
+botonSobreMi.textContent = 'Sobre mí';
+
+const botonModoOscuro = document.createElement('button');
+botonModoOscuro.id = 'Modo-oscuro';
+botonModoOscuro.textContent = 'Alternar Modo Oscuro';
+botonModoOscuro.style.marginLeft = '20px';
+
+header.appendChild(titulo);
+header.appendChild(botonSobreMi);
+header.appendChild(botonModoOscuro);
+
+sobreMi.prepend(header);
 
 })
