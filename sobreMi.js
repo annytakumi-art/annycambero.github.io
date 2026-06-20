@@ -26,7 +26,7 @@ botonHabilidades.textContent = 'Mis habilidades'
 
 const botonModoOscuro = document.createElement('button');
 botonModoOscuro.id = 'Modo-oscuro';
-botonModoOscuro.textContent = 'Alternar Modo Oscuro';
+botonModoOscuro.textContent = '';
 botonModoOscuro.style.marginLeft = '20px';
 
 botonModoOscuro.addEventListener('click', () => {
@@ -74,6 +74,10 @@ const vistaPrincipal = document.createElement('main');
     `;
     const vistaHabilidadesHTML =`
         <h2> Mis habilidades </h2>
+
+        <h3> Soft skills</3>
+
+        <h3> Hard skills</3>
         `;
     const vistaContactameHTML = `
         <h2> Contáctame </h2>
