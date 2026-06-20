@@ -34,6 +34,7 @@ nav.appendChild(botonSobreMi);
 nav.appendChild(botonProyectos);
 nav.appendChild(botonHabilidades);
 nav.appendChild(botonContactame);
+nav.appendChild(botonModoOscuro);
 header.appendChild(nav);
 sobreMi.prepend(header);
 
