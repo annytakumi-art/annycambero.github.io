@@ -19,3 +19,55 @@ p {
 color: rgb(80, 28, 130);
 
 }
+
+/* Estilo de los botones*/
+nav button {
+    /* Quitamos el fondo y los bordes cuadrados por defecto */
+    background-color: transparent;
+    border: none;
+    
+    /* Estilos del texto */
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    
+    /* --- LA MAGIA DE LA ILUSTRACIÓN --- */
+    /* Aquí pones la ruta del dibujo que hagas en Photoshop */
+    background-image: url('imagenes/patita.png'); 
+    
+    /* Ajustamos el tamaño de la patita */
+    background-size: 25px; 
+    
+    /* Evitamos que el gato se clone por todo el botón */
+    background-repeat: no-repeat; 
+    
+    /* Colocamos la patita a la izquierda y centrada verticalmente */
+    background-position: left center; 
+    
+    /* Le damos espacio (padding) al texto para que no pise el dibujo. 
+       El '40px' es el espacio a la izquierda para dejarle hueco a la patita */
+    padding: 10px 15px 10px 40px; 
+    
+    transition: all 0.3s ease;
+}
+
+/* El efecto al pasar el ratón por encima */
+nav button:hover {
+    /* Hace que el botón dé un pequeño saltito, como un gato jugando */
+    transform: translateY(-4px) scale(1.05);
+    
+    /* Opcional: Cambia el color del texto al pasar el ratón */
+    color: #ff6b6b; 
+}
+
+/* Estilo especial para el Modo Oscuro */
+#Modo-oscuro {
+    /* Puedes dibujar una patita de otro color (quizás gris o negra) para este botón especial */
+    background-image: url('imagenes/patita-oscura.png');
+} 
+
+nav button:hover {
+    background-image: url('imagenes/patitaparapagina.png');
+    transform: translateY(-4px) scale(1.05);
+}
