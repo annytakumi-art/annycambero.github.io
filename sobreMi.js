@@ -66,8 +66,5 @@ seccionSobreMi.innerHTML = `
     `;
 
 sobreMi.appendChild(seccionSobreMi);
-sobreMi.appendChild(seccionProyectos);
-sobreMi.appendChild(seccionHabilidades);
-
 
 })
