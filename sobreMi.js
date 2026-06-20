@@ -10,8 +10,13 @@ const header = document.createElement('header');
 const titulo = document.createElement('h1');
 titulo.textContent = 'Bienvenidos a mi web';
 
+const nav = document.createElement('nav');
+
 const botonSobreMi = document.createElement('button');
 botonSobreMi.textContent = 'Sobre mí';
+
+const botonContactame = document.createElement('button');
+botonContactame.textContent = 'Contáctame';
 
 const botonProyectos = document.createElement('button');
 botonProyectos.textContent = 'Mis proyectos';
@@ -34,11 +39,11 @@ const seccionHabilidades = document.createElement('section');
 seccionHabilidades.id = 'seccionHabilidades';
 
 header.appendChild(titulo);
-header.appendChild(botonSobreMi);
-header.appendChild(botonProyectos);
-header.appendChild(botonHabilidades);
-header.appendChild(botonModoOscuro);
-
+nav.appendChild(botonSobreMi);
+nav.appendChild(botonProyectos);
+nav.appendChild(botonHabilidades);
+nav.appendChild(botonContactame);
+header.appendChild(nav);
 sobreMi.prepend(header);
 
 seccionSobreMi.innerHTML = `
@@ -64,7 +69,38 @@ seccionSobreMi.innerHTML = `
     el primer commit. </p>
     
     `;
+seccionProyectos.innerHTML = `
+     <h2> Mis proyectos </h2>
 
-sobreMi.appendChild(seccionSobreMi);
+`
+seccionHabilidades.innerHTML = `
+     <h2> Mis habilidades </h2>
+
+`
+
+const vistaPrincipal = document.createElement('main');
+    vistaPrincipal.id = 'vistaPrincipal';
+    sobreMi.appendChild(vistaPrincipal);
+
+    sobreMi.appendChild(seccionSobreMi);
+
+    const configurarNavegacion = () => {
+    const vistaSobreMiHTML = `...`;
+    const vistaProyectosHTML = `...`;
+    const vistaHabilidadesHTML =`...`;
+    const vistaContactameHTML = `...`;
+
+    function cambiarVista(nuevoHTML) {
+            vistaPrincipal.innerHTML = nuevoHTML;
+        }
+
+    botonSobreMi.addEventListener('click', () => cambiarVista(vistaSobreMiHTML));
+    botonProyectos.addEventListener('click', () => cambiarVista(vistaProyectosHTML));
+    botonHabilidades.addEventListener('click', () => cambiarVista(vistaHabilidadesHTML));
+    botonContactame.addEventListener('click', () => cambiarVista(vistaContactameHTML));
+
+        cambiarVista(vistaSobreMiHTML);
+};
+configurarNavegacion();
 
 })
