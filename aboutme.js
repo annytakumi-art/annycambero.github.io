@@ -24,10 +24,23 @@ botonModoOscuro.id = 'Modo-oscuro';
 botonModoOscuro.textContent = 'Alternar Modo Oscuro';
 botonModoOscuro.style.marginLeft = '20px';
 
+const seccionSobreMi = document.createElement('section');
+seccionSobreMi.id = 'seccionSobreMi';
+
+const seccionProyectos = document.createElement('section');
+seccionProyectos.id = 'seccionProyectos';
+
+const seccionHabilidades = document.createElement('section');
+seccionHabilidades.id = 'seccionHabilidades';
+
 header.appendChild(titulo);
 header.appendChild(botonSobreMi);
+header.appendChild(botonProyectos);
+header.appendChild(botonHabilidades);
 header.appendChild(botonModoOscuro);
 
 sobreMi.prepend(header);
+
+
 
 })
