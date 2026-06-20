@@ -6,8 +6,6 @@ if (!sobreMi) {
         return;
     }
 
-
-
 const header = document.createElement('header');
 const titulo = document.createElement('h1');
 titulo.textContent = 'Bienvenidos a mi web';
@@ -44,6 +42,7 @@ header.appendChild(botonModoOscuro);
 sobreMi.prepend(header);
 
 seccionSobreMi.innerHTML = `
+    <img src="imagenes/MiFoto.png" alt="" width="10%" height="10%"> 
     <h2> Sobre mí </h2>
     <p>Soy desarrolladora Full-Stack (DAW/DAM) con una visión integral del producto <br>
     digital. Mi camino hacia la programación no empezó directamente en el código,<br>
