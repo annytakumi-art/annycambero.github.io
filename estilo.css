@@ -1,30 +1,28 @@
-body{
+
+body {
+
     background-image: url('imagenes/fondopatitas.png');
+    background-color: #ffffff; /* Por si la imagen tarda en cargar */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 100vh; 
     margin: 0;
-}
-h1 {
-color: rgb(80, 28, 130);
-
-}
-
-h2 {
-color: rgb(80, 28, 130);
+    
+   
+    transition: background-image 0.4s ease, background-color 0.4s ease, color 0.4s ease; 
 }
 
-p {
-color: rgb(80, 28, 130);
 
+h1, h2, p {
+    color: rgb(80, 28, 130);
+    transition: color 0.4s ease;
 }
 
-/* Estilo de los botones*/
+
 nav button {
     background-color: transparent;
     border: none;
-    
     color: #333;
     font-size: 1.1rem;
     font-weight: bold;
@@ -40,18 +38,35 @@ nav button {
     transition: all 0.3s ease;
 }
 
-nav button:hover {
-    transform: translateY(-4px) scale(1.0);
-    color: #d34b4b; 
-}
-
-/* Estilo especial para el Modo Oscuro */
-#Modo-oscuro {
-    /* Puedes dibujar una patita de otro color (quizás gris o negra) para este botón especial */
-    background-image: url('imagenes/patitaparapaginaoscura.png');
-} 
 
 nav button:hover {
     background-image: url('imagenes/patitaparapagina.png');
     transform: translateY(-4px) scale(1.05);
+    color: #d34b4b; 
+}
+
+
+#Modo-oscuro {
+    background-image: url('imagenes/patitaparapaginaoscura.png');
+} 
+
+body.tema-oscuro {
+    background-image: url('imagenes/fondomodooscuro.png');
+    background-color: #1a1a1a; 
+}
+
+body.tema-oscuro nav button {
+     color: #e596ff; 
+}
+
+body.tema-oscuro h1,
+body.tema-oscuro h2,
+body.tema-oscuro p {
+    color: #e596ff; 
+}
+
+
+body.tema-oscuro #Modo-oscuro {
+    background-image: url('imagenes/patitaparapaginaoscura.png');
+    color: #e596ff; 
 }

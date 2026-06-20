@@ -29,6 +29,10 @@ botonModoOscuro.id = 'Modo-oscuro';
 botonModoOscuro.textContent = 'Alternar Modo Oscuro';
 botonModoOscuro.style.marginLeft = '20px';
 
+botonModoOscuro.addEventListener('click', () => {
+    document.body.classList.toggle('tema-oscuro');
+});
+
 header.appendChild(titulo);
 nav.appendChild(botonSobreMi);
 nav.appendChild(botonProyectos);
