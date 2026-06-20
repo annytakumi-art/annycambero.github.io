@@ -45,7 +45,7 @@ const vistaPrincipal = document.createElement('main');
     const configurarNavegacion = () => {
     const vistaSobreMiHTML = `<img src="imagenes/mifoto.png" alt="" width="10%" height="10%"> 
     <h2> Sobre mí </h2>
-    <p>Soy desarrolladora Full-Stack (DAW/DAM) con una visión integral del producto <br>
+    <p>Hola!, me llamo Anny cambero Prieto y soy desarrolladora Full-Stack (DAW/DAM) con una visión integral del producto <br>
     digital. Mi camino hacia la programación no empezó directamente en el código,<br>
     sino escuchando a las personas. Tras años de experiencia en soporte y atención <br>
     al cliente, desarrollé una empatía profunda hacia las necesidades del usuario <br>
