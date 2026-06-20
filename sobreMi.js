@@ -29,15 +29,6 @@ botonModoOscuro.id = 'Modo-oscuro';
 botonModoOscuro.textContent = 'Alternar Modo Oscuro';
 botonModoOscuro.style.marginLeft = '20px';
 
-const seccionSobreMi = document.createElement('section');
-seccionSobreMi.id = 'seccionSobreMi';
-
-const seccionProyectos = document.createElement('section');
-seccionProyectos.id = 'seccionProyectos';
-
-const seccionHabilidades = document.createElement('section');
-seccionHabilidades.id = 'seccionHabilidades';
-
 header.appendChild(titulo);
 nav.appendChild(botonSobreMi);
 nav.appendChild(botonProyectos);
@@ -46,8 +37,13 @@ nav.appendChild(botonContactame);
 header.appendChild(nav);
 sobreMi.prepend(header);
 
-seccionSobreMi.innerHTML = `
-    <img src="imagenes/mifoto.png" alt="" width="10%" height="10%"> 
+
+const vistaPrincipal = document.createElement('main');
+    vistaPrincipal.id = 'vistaPrincipal';
+    sobreMi.appendChild(vistaPrincipal); 
+
+    const configurarNavegacion = () => {
+    const vistaSobreMiHTML = `<img src="imagenes/mifoto.png" alt="" width="10%" height="10%"> 
     <h2> Sobre mí </h2>
     <p>Soy desarrolladora Full-Stack (DAW/DAM) con una visión integral del producto <br>
     digital. Mi camino hacia la programación no empezó directamente en el código,<br>
@@ -67,28 +63,16 @@ seccionSobreMi.innerHTML = `
     y un certificado reciente en Inteligencia Artificial para no quedarme atrás en la<br>
     innovación, busco un equipo donde pueda seguir creciendo y aportando valor desde <br>
     el primer commit. </p>
-    
     `;
-seccionProyectos.innerHTML = `
-     <h2> Mis proyectos </h2>
-
-`
-seccionHabilidades.innerHTML = `
-     <h2> Mis habilidades </h2>
-
-`
-
-const vistaPrincipal = document.createElement('main');
-    vistaPrincipal.id = 'vistaPrincipal';
-    sobreMi.appendChild(vistaPrincipal);
-
-    sobreMi.appendChild(seccionSobreMi);
-
-    const configurarNavegacion = () => {
-    const vistaSobreMiHTML = `...`;
-    const vistaProyectosHTML = `...`;
-    const vistaHabilidadesHTML =`...`;
-    const vistaContactameHTML = `...`;
+    const vistaProyectosHTML = `
+        <h2> Mis proyectos </h2>
+    `;
+    const vistaHabilidadesHTML =`
+        <h2> Mis habilidades </h2>
+        `;
+    const vistaContactameHTML = `
+        <h2> Contáctame </h2>
+    `;
 
     function cambiarVista(nuevoHTML) {
             vistaPrincipal.innerHTML = nuevoHTML;
