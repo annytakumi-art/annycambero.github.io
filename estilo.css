@@ -46,19 +46,17 @@ nav button:hover {
 }
 
 
-#Modo-oscuro {
-    background-image: url('imagenes/patitaparapaginaoscura.png');
-} 
-
 body.tema-oscuro {
     background-image: url('imagenes/fondomodooscuro.png');
     background-color: #1a1a1a; 
 }
 
+/* Cambia el texto de los botones normales a rosa claro */
 body.tema-oscuro nav button {
      color: #e596ff; 
 }
 
+/* Cambia los títulos y párrafos a rosa claro */
 body.tema-oscuro h1,
 body.tema-oscuro h2,
 body.tema-oscuro h3,
@@ -67,7 +65,50 @@ body.tema-oscuro p {
 }
 
 
+#Modo-oscuro {
+    width: 70px;
+    height: 34px;
+    background-color: rgb(80, 28, 130); 
+    border-radius: 34px; 
+    position: relative;
+    border: none;
+    cursor: pointer;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.3); 
+    transition: background-color 0.4s ease; 
+    
+
+    background-image: none !important; 
+    padding: 0; 
+}
+
+
+#Modo-oscuro::before {
+    content: ""; 
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4); 
+    
+    background-image: url('imagenes/patitaparapagina.png');
+    background-size: 20px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    transition: transform 0.4s ease, background-image 0.4s ease;
+}
+
+
 body.tema-oscuro #Modo-oscuro {
-    background-image: url('imagenes/patitaparapaginaoscura.png');
-    color: #e596ff; 
+    background-color: #ff85c0; 
+    background-image: none !important; /* Aseguramos que la patita no regrese */
+}
+
+
+body.tema-oscuro #Modo-oscuro::before {
+    transform: translateX(36px); 
+    background-image: url('imagenes/patitaparapaginaoscura.png'); 
 }
