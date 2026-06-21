@@ -113,7 +113,7 @@ const vistaPrincipal = document.createElement('main');
     {
             titulo: "Página sobre Stray kids",
             descripcion: "Es mi primera página estática, de mi grupo K-pop favorito",
-            tecnologias: ["JavaScript", "HTML/CSS", "SQL"],
+            tecnologias: ["HTML/CSS"],
             enlaceRepositorio: "https://annytakumi-art.github.io/practica-web-estatica-SKZ/",
             imagen: "imagenes/albumDoit.jpg"
             },
