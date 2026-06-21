@@ -60,9 +60,16 @@ body.tema-oscuro {
 }
 
 
+
 body.tema-oscuro nav button {
      color: #e596ff; 
 }
+
+body.tema-oscuro nav button:hover {
+    background-image: url('imagenes/patitaparapagina.png'); /* Patita rosada */
+    color: #e596ff;
+}
+
 
 
 body.tema-oscuro h1,
@@ -83,8 +90,6 @@ body.tema-oscuro p {
     cursor: pointer;
     box-shadow: inset 0 2px 5px rgba(0,0,0,0.3); 
     transition: background-color 0.4s ease; 
-    
-
     background-image: none !important; 
     padding: 0; 
 }
@@ -115,7 +120,7 @@ body.tema-oscuro #Modo-oscuro {
     background-image: none !important; 
 }
 
-
+/*boton modo oscuro cambiante*/
 body.tema-oscuro #Modo-oscuro::before {
     transform: translateX(36px); 
     background-image: url('imagenes/patitaparapaginaoscura.png'); 
@@ -146,11 +151,17 @@ body.tema-oscuro #Modo-oscuro::before {
   left: 10px;
   width: 140px;
   height: 90px;
-  background-color: #ffffff;
+  background-image:url(imagenes/patitaparapagina.png);
+  background-image: url('imagenes/patitaparapaginaoscura.png');
+  transform: translateY(-4px) scale(1.05);
+  color: #d34b4b; 
   border-radius: 4px;
   transition: transform 0.4s 0.2s ease-in-out;
   z-index: 1;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+ 
+   
+
 }
 
 .frenteCarta {
