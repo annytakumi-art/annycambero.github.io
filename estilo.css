@@ -151,17 +151,26 @@ body.tema-oscuro #Modo-oscuro::before {
   left: 10px;
   width: 140px;
   height: 90px;
-  background-image:url(imagenes/patitaparapagina.png);
-  background-image: url('imagenes/patitaparapaginaoscura.png');
-  transform: translateY(-4px) scale(1.05);
-  color: #d34b4b; 
+  
+  
+  background-color: #ffffff; 
+  
+  
+  background-image: url('imagenes/patitaparapagina.png');
+  background-size: 50px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  
   border-radius: 4px;
   transition: transform 0.4s 0.2s ease-in-out;
   z-index: 1;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
- 
-   
+}
 
+
+body.tema-oscuro .cartaMail {
+  background-image: url('imagenes/patitaparapaginaoscura.png');
+  background-color: #ffffff; 
 }
 
 .frenteCarta {
