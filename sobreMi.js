@@ -106,6 +106,38 @@ const vistaPrincipal = document.createElement('main');
     sobreMi.appendChild(vistaPrincipal); 
 
     const configurarNavegacion = () => {
+
+
+    /* Aquí van mis proyectos */
+    const misProyectos = [
+    {
+            titulo: "E-commerce Full-Stack",
+            descripcion: "Plataforma de comercio electrónico...",
+            tecnologias: ["JavaScript", "HTML/CSS", "SQL"],
+            enlaceRepositorio: "https://annytakumi-art.github.io/practica-web-estatica-SKZ/",
+            imagen: "./imagenes/albumDoIt.png"
+            },
+           
+        ];
+        const tarjetasProyectosHTML = misProyectos.map(proyecto => `
+            <article class="tarjeta-proyecto">
+                <img src="${proyecto.imagen}" alt="Imagen de ${proyecto.titulo}" width="100%">
+                <h3>${proyecto.titulo}</h3>
+                <p>${proyecto.descripcion}</p>
+                <p><strong>Tecnologías:</strong> ${proyecto.tecnologias.join(', ')}</p>
+                <a href="${proyecto.enlaceRepositorio}" target="_blank">Ver en GitHub</a>
+            </article>
+        `).join('');
+        
+    const vistaProyectosHTML = `
+    <h2> Mis proyectos </h2> 
+    
+    <div class="contenedor-proyectos">
+        ${tarjetasProyectosHTML}
+    </div>
+    `;
+   
+
     const vistaSobreMiHTML = `<img src="./imagenes/mifoto.png" alt="Foto de perfil de Anny" width="150px"> 
     <h2> Sobre mí </h2>
     <p>Hola!, me llamo Anny cambero Prieto y soy desarrolladora Full-Stack (DAW/DAM)<br>
@@ -128,11 +160,8 @@ const vistaPrincipal = document.createElement('main');
     innovación, busco un equipo donde pueda seguir creciendo y aportando valor desde <br>
     el primer commit. </p>
     `;
-    const vistaProyectosHTML = `
-        <h2> Mis proyectos </h2>
-        
-        
-    `;
+  
+
     const vistaHabilidadesHTML =`
         <h2> Mis habilidades </h2>
 
@@ -154,5 +183,7 @@ const vistaPrincipal = document.createElement('main');
         cambiarVista(vistaSobreMiHTML);
 };
 configurarNavegacion();
+
+
 
 })
