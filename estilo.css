@@ -22,6 +22,7 @@ h1, h2, h3, p {
 }
 
 img{
+
     border-radius: 20%;
     display: block;
     margin: 0 auto;
@@ -111,7 +112,7 @@ body.tema-oscuro p {
 
 body.tema-oscuro #Modo-oscuro {
     background-color: #ff85c0; 
-    background-image: none !important; /* Aseguramos que la patita no regrese */
+    background-image: none !important; 
 }
 
 

@@ -5,6 +5,11 @@ if (!sobreMi) {
         console.error("Error en encontrar al contenedor de la web");
         return;
     }
+const modoGuardado = localStorage.getItem('modoElegido');
+
+if (modoGuardado === 'oscuro') {
+        document.body.classList.add('tema-oscuro');
+    }
 
 const header = document.createElement('header');
 const titulo = document.createElement('h1');
@@ -31,6 +36,12 @@ botonModoOscuro.style.marginLeft = '20px';
 
 botonModoOscuro.addEventListener('click', () => {
     document.body.classList.toggle('tema-oscuro');
+    
+    if(document.body.classList.contains('tema-oscuro')){
+        localStorage.setItem('modoElegido', 'oscuro');
+    }else{
+        localStorage.setItem('modoElegido', 'claro');
+    }
 });
 
 header.appendChild(titulo);
