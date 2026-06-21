@@ -48,7 +48,7 @@ const vistaPrincipal = document.createElement('main');
     sobreMi.appendChild(vistaPrincipal); 
 
     const configurarNavegacion = () => {
-    const vistaSobreMiHTML = `<img src="imagenes/mifoto.png" alt="" width="10%" height="10%"> 
+    const vistaSobreMiHTML = `<img src="./imagenes/mifoto.png" alt="Foto de perfil de Anny" width="150px"> 
     <h2> Sobre mí </h2>
     <p>Hola!, me llamo Anny cambero Prieto y soy desarrolladora Full-Stack (DAW/DAM) con una visión integral del producto <br>
     digital. Mi camino hacia la programación no empezó directamente en el código,<br>
