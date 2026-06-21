@@ -50,11 +50,12 @@ const vistaPrincipal = document.createElement('main');
     const configurarNavegacion = () => {
     const vistaSobreMiHTML = `<img src="./imagenes/mifoto.png" alt="Foto de perfil de Anny" width="150px"> 
     <h2> Sobre mí </h2>
-    <p>Hola!, me llamo Anny cambero Prieto y soy desarrolladora Full-Stack (DAW/DAM) con una visión integral del producto <br>
-    digital. Mi camino hacia la programación no empezó directamente en el código,<br>
-    sino escuchando a las personas. Tras años de experiencia en soporte y atención <br>
-    al cliente, desarrollé una empatía profunda hacia las necesidades del usuario <br>
-    final y una gran agilidad para la resolución de problemas.<br><br>
+    <p>Hola!, me llamo Anny cambero Prieto y soy desarrolladora Full-Stack (DAW/DAM)<br>
+    con una visión integral del producto digital. Mi camino hacia la programación no<br>
+    empezó directamente en el código, sino escuchando a las personas. Tras años de <br>
+    experiencia en soporte y atención al cliente, desarrollé una empatía profunda <br>
+    hacia las necesidades del usuario final y una gran agilidad para la resolución <br>
+    de problemas.<br><br>
      
     Un día decidí que no solo quería resolver las incidencias de las aplicaciones, <br>
     sino construirlas. Hoy, traduzco esa mentalidad centrada en el usuario en código <br>
@@ -71,6 +72,7 @@ const vistaPrincipal = document.createElement('main');
     `;
     const vistaProyectosHTML = `
         <h2> Mis proyectos </h2>
+        
     `;
     const vistaHabilidadesHTML =`
         <h2> Mis habilidades </h2>

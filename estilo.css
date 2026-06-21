@@ -2,14 +2,13 @@
 body {
 
     background-image: url('imagenes/fondopatitas.png');
-    background-color: #ffffff; /* Por si la imagen tarda en cargar */
+    background-color: #ffffff; 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 100vh; 
     margin: 0;
     
-   
     transition: background-image 0.4s ease, background-color 0.4s ease, color 0.4s ease; 
 }
 
@@ -17,8 +16,17 @@ body {
 h1, h2, h3, p {
     color: rgb(80, 28, 130);
     transition: color 0.4s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
 }
 
+img{
+    border-radius: 20%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
 
 nav button {
     background-color: transparent;
@@ -29,7 +37,6 @@ nav button {
     cursor: pointer;
     
 
-    background-image: url('imagenes/patita.png'); 
     background-size: 25px; 
     background-repeat: no-repeat;     
     background-position: left center; 
@@ -40,7 +47,7 @@ nav button {
 
 
 nav button:hover {
-    background-image: url('imagenes/patitaparapagina.png');
+    background-image: url('imagenes/patitaparapaginaoscura.png');
     transform: translateY(-4px) scale(1.05);
     color: #d34b4b; 
 }
@@ -51,12 +58,12 @@ body.tema-oscuro {
     background-color: #1a1a1a; 
 }
 
-/* Cambia el texto de los botones normales a rosa claro */
+
 body.tema-oscuro nav button {
      color: #e596ff; 
 }
 
-/* Cambia los títulos y párrafos a rosa claro */
+
 body.tema-oscuro h1,
 body.tema-oscuro h2,
 body.tema-oscuro h3,
