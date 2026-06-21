@@ -111,17 +111,17 @@ const vistaPrincipal = document.createElement('main');
     /* Aquí van mis proyectos */
     const misProyectos = [
     {
-            titulo: "E-commerce Full-Stack",
-            descripcion: "Plataforma de comercio electrónico...",
+            titulo: "Página sobre Stray kids",
+            descripcion: "Es mi primera página estática, de mi grupo K-pop favorito",
             tecnologias: ["JavaScript", "HTML/CSS", "SQL"],
             enlaceRepositorio: "https://annytakumi-art.github.io/practica-web-estatica-SKZ/",
-            imagen: "./imagenes/albumDoIt.png"
+            imagen: "imagenes/albumDoit.jpg"
             },
            
         ];
         const tarjetasProyectosHTML = misProyectos.map(proyecto => `
             <article class="tarjeta-proyecto">
-                <img src="${proyecto.imagen}" alt="Imagen de ${proyecto.titulo}" width="100%">
+                <img src="${proyecto.imagen}" alt="Imagen de ${proyecto.titulo}" width="10%">
                 <h3>${proyecto.titulo}</h3>
                 <p>${proyecto.descripcion}</p>
                 <p><strong>Tecnologías:</strong> ${proyecto.tecnologias.join(', ')}</p>
