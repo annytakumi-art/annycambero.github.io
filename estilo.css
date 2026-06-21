@@ -120,3 +120,79 @@ body.tema-oscuro #Modo-oscuro::before {
     transform: translateX(36px); 
     background-image: url('imagenes/patitaparapaginaoscura.png'); 
 }
+
+/*Animación de carta contactame*/
+.iconoMail {
+  position: relative;
+  width: 160px;
+  height: 110px;
+  cursor: pointer;
+  margin: 50px auto; 
+}
+
+.regresaMail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(80, 28, 130);
+  border-radius: 8px;
+}
+
+.cartaMail {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 140px;
+  height: 90px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  transition: transform 0.4s 0.2s ease-in-out;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.frenteCarta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 80px solid rgb(100, 40, 150); 
+  border-right: 80px solid rgb(100, 40, 150);
+  border-bottom: 55px solid rgb(80, 28, 130);
+  border-top: 55px solid transparent;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  z-index: 2;
+  pointer-events: none; 
+}
+
+.cartaSolapa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 55px solid rgb(80, 28, 130);
+  transform-origin: top;
+  transition: transform 0.4s ease-in-out, z-index 0s 0.2s;
+  z-index: 3;
+}
+
+
+.iconoMail:hover .cartaSolapa {
+  transform: rotateX(180deg);
+  z-index: 0;
+}
+
+.iconoMail:hover .cartaMail {
+  transform: translateY(-40px);
+}
+.iconoMail {
+    border: 10px solid rgb(212, 52, 177) !important;
+    border-radius: 20%;
+    }
